@@ -132,11 +132,7 @@ Note that the code directly below this statement is not meant to be run but serv
 ----
 DATA_VERSION = 'v1.0'
 
-# PIPELINERUN will be set when run from the pipeline
-if os.environ.get('PIPELINERUN', None):
-    CSV_FILE = 'creditcard-train.csv'       
-else:
-    CSV_FILE = 'creditcard.csv'
+CSV_FILE = 'creditcard.csv'
 ----
 
 == Train And Test The Model
