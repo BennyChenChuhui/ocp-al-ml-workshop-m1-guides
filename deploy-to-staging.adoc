@@ -38,7 +38,7 @@ Argo CD is a declarative continuous delivery tool that leverages GitOps to maint
 
 `train-stage.sh` has been written to be used in the pipeline to call your python script and saves the model into the pipeline workspace. `train-stage.sh` can be found in your {{GIT_URL}}/{{USER_ID}}/{{USER_MODEL_REPO_NAME}}/[Gogs^] repository. The training script uses a `config.sh` that allows you to define the model to be trained.
 
-Under /projects/{{USER_MODEL_REPO_NAME}}/workshop/src/train/config.sh:
+Under /projects/{{USER_MODEL_REPO_NAME}}/src/train/config.sh:
 
 [NOTE]
 ====
