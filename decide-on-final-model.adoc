@@ -9,6 +9,8 @@ Run the following script to send sufficient transactions to the models.
 
 Now look at the Grafana {{GRAFANA_URL}}[dashboard^], and see that the Recall score, TP / (TP + FN), for XGBoost is better compared to Logistic Regression. 
 
+Choose your image and namespace `{{USER_ID}}-prod` and view the metrics from your model.
+
 :figure-caption!:
 
 [.float-group]
