@@ -49,7 +49,7 @@ In this workshop, we will not be using GPU to train the models.
 
 GPU is supported on OpenShift via the https://github.com/NVIDIA/gpu-operator[Nvidia GPU Operator^] and Node Feature Discovery (NFD) Operator. The NFD operator identifies hardware device features in nodes. It solves the general problem of identifying and cataloging hardware resources in the infrastructure nodes so they can be made available to OpenShift.
 
-image::nvdia-gpu-operator-manual-install.png[nvdia-gpu-operator-manual-install]
+image::images/nvdia-gpu-operator-manual-install.png[nvdia-gpu-operator-manual-install]
 
 The NFD operator uses vendor PCI IDs to identify hardware in a node and Nivdia uses the PCI ID `10de`. 
 
@@ -88,11 +88,11 @@ In Kubernetes, there are other Custom Resources (CR) such as:
 
 Look in the box at the top of your screen. Is your username set already? If so it will look like this:
 
-image::alreadyset.png[Set User ID above, 700]
+image::images/alreadyset.png[Set User ID above, 700]
 
 If your username is properly set, then you can move on. **If not, in the above box, enter the user ID you were assigned** like this:
 
-image::setuser.png[Set User ID above, 900]
+image::images/setuser.png[Set User ID above, 900]
 
 This will customize the links and copy/paste code for this workshop. If you have accidentally typed the wrong username, just click the green recycle icon to reset it.
 
@@ -134,3 +134,18 @@ you complete this module, your instructor may have additional modules to complet
 
 Good luck, and let’s get started!
 
+== Links
+
+* link:kubernetes-overview.adoc[1. Kubernetes Overview]
+* link:navigating-openshift-ui.adoc[2. Navigating OpenShift Web Console]
+* link:getting-started-mlops.adoc[3. Getting Started with MLOps]
+* link:workshop-environment.adoc[4. Your Workshop Environment]
+* link:exploring-data.adoc[5. Exploring Data]
+* link:building-the-first-model.adoc[6. Build the First Model]
+* link:productize-the-model.adoc[7. Productize the Model]
+* link:deploy-to-staging.adoc[8. Deploy The Model To Staging]
+* link:promote-to-production.adoc[9. Promote to Production]
+* link:model-observability.adoc[10. Model Monitoring and Observability]
+* link:continuous-training.adoc[11. Continuous Training With A/B Testing]
+* link:decide-on-final-model.adoc[12. Deploy The Chosen One]
+* link:integrate-with-application-services.adoc[13. Completing the Solution with Red Hat Application Services]
