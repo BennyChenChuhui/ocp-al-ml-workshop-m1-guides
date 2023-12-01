@@ -24,7 +24,7 @@ CodeReady Workspaces instance^], and log in using the username and
 password you’ve been assigned
 (e.g. `{{ USER_ID }}/{{ CHE_USER_PASSWORD }}`):
 
-image::che-login.png[che-login]
+image::images/che-login.png[che-login]
 
 Once you log in, you’ll be placed on your personal dashboard. Click on
 the name of the pre-created {{USER_ID}}-workspace on the bottom left, as shown below (the
@@ -32,7 +32,7 @@ name will be different depending on your assigned number).
 
 After a minute or two, you’ll be placed in the workspace:
 
-image::che-workspace.png[che-workspace]
+image::images/che-workspace.png[che-workspace]
 
 [NOTE]
 ====
@@ -68,14 +68,14 @@ For the rest of these labs, anytime you need to run a command in a
 terminal, you can use the *>_ New Terminal* command on the right. If the new terminal takes too long to launch or the user interface freezes, try refreshing the browser or restarting the workspace.
 ====
 
-image::che-terminal.png[che-terminal]
+image::images/che-terminal.png[che-terminal]
 
 [NOTE]
 ====
 To restart the workspace: On the CodeReady main page, click on the Workspaces you are using, and then click the "Stop" button next to your new workspace. You may get an error popup which you can ignore. Then, click the "Start" button to restart the workspace.
 ====
 
-image::start-stop-codeready-workspaces.png[start-stop-codeready-workspaces]
+image::images/start-stop-codeready-workspaces.png[start-stop-codeready-workspaces]
 
 Run the following commands to convert a notebook into a python code.
 
@@ -88,13 +88,13 @@ jupytext "2 building the first model.ipynb"  -o ../src/train/lr.py
 
 To inspect the newly converted file, the user can navigate from the file explorer under "Open File"
 
-image::codeready-file-explorer.png[codeready-file-explorer]
+image::images/codeready-file-explorer.png[codeready-file-explorer]
 
 [NOTE]
 ====
 You can ignore the pylint warning
 
-image::che-pylint.png[che-pylint]
+image::images/che-pylint.png[che-pylint]
 ====
 
 == Refactor the New Model
@@ -177,7 +177,7 @@ cd /projects/{{USER_MODEL_REPO_NAME}}/src/seldon/
 ====
 You can ignore this popup box because we are not exposing the route.
 
-image::che-exposed-route.png[che-exposed-route]
+image::images/che-exposed-route.png[che-exposed-route]
 ====
 
 Now let's test the model. Open up a *new* terminal and run the following:
@@ -206,3 +206,19 @@ git push -v origin master
 
 The code has now been pushed to {{GIT_URL}}/{{USER_ID}}/{{USER_MODEL_REPO_NAME}}[your^] git
 repository on the `master/devel` branch.
+
+== Links
+
+* link:kubernetes-overview.adoc[1. Kubernetes Overview]
+* link:navigating-openshift-ui.adoc[2. Navigating OpenShift Web Console]
+* link:getting-started-mlops.adoc[3. Getting Started with MLOps]
+* link:workshop-environment.adoc[4. Your Workshop Environment]
+* link:exploring-data.adoc[5. Exploring Data]
+* link:building-the-first-model.adoc[6. Build the First Model]
+* link:productize-the-model.adoc[7. Productize the Model]
+* link:deploy-to-staging.adoc[8. Deploy The Model To Staging]
+* link:promote-to-production.adoc[9. Promote to Production]
+* link:model-observability.adoc[10. Model Monitoring and Observability]
+* link:continuous-training.adoc[11. Continuous Training With A/B Testing]
+* link:decide-on-final-model.adoc[12. Deploy The Chosen One]
+* link:integrate-with-application-services.adoc[13. Completing the Solution with Red Hat Application Services]
