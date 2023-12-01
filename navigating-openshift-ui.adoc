@@ -11,13 +11,13 @@ prompts users for their Username and Password.
 Your user name will be `{{  USER_ID }}` and password is
 `{{  OPENSHIFT_USER_PASSWORD }}`
 
-image::openshift-ui-login.png[openshift_ui_login]
+image::images/openshift-ui-login.png[openshift_ui_login]
 
 == Creating a New Project
 
 Proceed to create a new project with the name `{{  USER_ID }}-myproject` by selecting `Create Project`.
 
-image::openshift-create-new-project.png[openshift_create_new_project]
+image::images/openshift-create-new-project.png[openshift_create_new_project]
 
 Upon creating a project you will be brought to the overview page for the
 new project.
@@ -27,26 +27,26 @@ can select `Home->Projects` from the side menu on the left. You can
 click on the hamburger menu item button on the top left corner of the
 web console if you do not see the side menu.
 
-image::openshift-project-list.png[openshift_project_list]
+image::images/openshift-project-list.png[openshift_project_list]
 
 == Accessing Project
 
 Click on `{{  USER_ID }}-myproject` and we will get to the `Overview` page of the
 project
 
-image::myproject-overview-page.png[myproject_overview_page]
+image::images/myproject-overview-page.png[myproject_overview_page]
 
 Next, select the `Developer` perspective for the project instead of the
 `Adminstrator` perspective from the left hand side menu
 
-image::openshift-developer-view.png[openshift_developer_view]
+image::images/openshift-developer-view.png[openshift_developer_view]
 
 == Deploying Application Using Web Console
 
 Proceed to select _From Catalog_. This will bring us to the Developer
 Catalog.
 
-image::openshift-developer-catalog.png[openshift_developer_catalog]
+image::images/openshift-developer-catalog.png[openshift_developer_catalog]
 
 In this example, we will deploy a web application which is implemented
 using Python.
@@ -55,12 +55,12 @@ Click on _Languages_ and then select _Python_. We will see the options
 for deploying applications which are related to Python. Select the
 _Python_ tile for the generic Python Source-to-Image (S2I) builder.
 
-image::developer-catalog-python.png[developer_catalog_python]
+image::images/developer-catalog-python.png[developer_catalog_python]
 
 This will bring up a dialog with the details of the builder image. Click
 on `Create Application` in the dialog.
 
-image::python-s2i-create-app.png[python_s2i_create_app]
+image::images/python-s2i-create-app.png[python_s2i_create_app]
 
 Under the _Git_ settings, we will insert the Git Repo URL that we will
 be using for this example,
@@ -69,7 +69,7 @@ repository contains a sample implementation of a blog application,
 designed to show the various features of OpenShift. The blog application
 is implemented using Python and Django.
 
-image::django-git-repo-url.png[django_git_repo_url]
+image::images/django-git-repo-url.png[django_git_repo_url]
 
 Next, we will scroll down to the _General_ settings. We can see that the
 settings in the _Application Name_ field have been pre-populated with
@@ -77,7 +77,7 @@ values based on the Git repository name. We will need to select `Deployment Conf
 under the `Resources` section. Other changes can be made as needed.
 Proceed to hit the `Create` button at the bottom of the page after this.
 
-image::django-application-settings.png[django_application_settings]
+image::images/django-application-settings.png[django_application_settings]
 
 Upon hitting the `Create` button, we will get redirected to the
 _Topology_ overview of the project.
@@ -89,7 +89,7 @@ The Git icon shown to the lower right of the ring can be clicked on to
 take us to the hosted Git repository from which the source code for the
 application was built.
 
-image::django-application-topology-view.png[django_application_topology_view]
+image::images/django-application-topology-view.png[django_application_topology_view]
 
 The icon shown to the lower left represents the build of the
 application. The icon will change from showing an hour glass, indicating
@@ -111,14 +111,14 @@ build will have completed successfully when you see a final message of
 `Push successful`. This indicates that the container image for the
 application was pushed to the OpenShift internal image registry.
 
-image::django-image-build.png[django_image_build]
+image::images/django-image-build.png[django_image_build]
 
-image::django-image-build-logs.png[django_image_build_logs]
+image::images/django-image-build-logs.png[django_image_build_logs]
 
 Once the build of the application image has completed, it will be
 deployed.
 
-image::django-app-deployment.png[django_app_deployment]
+image::images/django-app-deployment.png[django_app_deployment]
 
 A _Route_ is automatically created for the application upon successful
 creation of the Django application. The route will be exposed outside of
@@ -128,19 +128,19 @@ web browser will be visible.
 Once the application is running, the icon shown to the upper right can
 be clicked to open the URL for the application route which was created.
 
-image::django-app-deployed.png[django_app_deployed]
+image::images/django-app-deployed.png[django_app_deployed]
 
 Clicking on the URL link will bring us to the Django application that
 was just deployed.
 
-image::django-app-webpage.png[django_app_webpage]
+image::images/django-app-webpage.png[django_app_webpage]
 
 == Administrator View
 
 Select the `Adminstrator` perspective for the project from the left hand
 side menu
 
-image::openshift-administrator-view.png[openshift_administrator_view]
+image::images/openshift-administrator-view.png[openshift_administrator_view]
 
 === Pods
 
@@ -170,7 +170,7 @@ controllers, rather than directly by users.
 Go to the `Workloads` tab and select _Pods_ to view the pods in this
 project.
 
-image::django-pods.png[django_pods]
+image::images/django-pods.png[django_pods]
 
 === Services
 
@@ -191,7 +191,7 @@ on a certain port.
 Like pods, services are REST objects. Go to the `Networking` tab and
 select _Services_ to view the services in this project.
 
-image::django-services.png[django_services]
+image::images/django-services.png[django_services]
 
 === Routes
 
@@ -201,7 +201,7 @@ and the endpoints identified by its service can be consumed by a router
 to provide named connectivity that allows external clients to reach your
 applications.
 
-image::django-routes.png[django_routes]
+image::images/django-routes.png[django_routes]
 
 === Deployments and DeploymentConfigs
 
@@ -233,9 +233,9 @@ manually or automatically in case of deployment failure
 Go to the `Workloads` tab and select _Deployment Configs_ to view the
 DeploymentConfig in this project.
 
-image::django-deployment-configs.png[django_deployment_configs]
+image::images/django-deployment-configs.png[django_deployment_configs]
 
-image::django-deployment-configs-yaml.png[django_deployment_configs_yaml]
+image::images/django-deployment-configs-yaml.png[django_deployment_configs_yaml]
 
 === Replication Controllers
 
@@ -254,9 +254,9 @@ A ReplicationController configuration consists of:
 Go to the `Workloads` tab and select _Replication Controllers_ to view
 the ReplicationController for this project.
 
-image::django-replication-controllers.png[django_replication_controllers]
+image::images/django-replication-controllers.png[django_replication_controllers]
 
-image::django-replication-controllers-overview.png[django_replication_controllers_overview]
+image::images/django-replication-controllers-overview.png[django_replication_controllers_overview]
 
 === Secrets
 
@@ -267,7 +267,7 @@ credentials, and so on. Secrets decouple sensitive content from the
 pods. You can mount secrets into containers using a volume plug-in or
 the system can use secrets to perform actions on behalf of a pod.
 
-image::django-secrets.png[django_secrets]
+image::images/django-secrets.png[django_secrets]
 
 === Config Maps
 
@@ -292,7 +292,7 @@ Go to the `Workloads` tab and select _Config Maps_ to view the Config
 Maps for this project. In this case, we can see the _CA certificates_ as
 config maps.
 
-image::django-configmaps.png[django_configmaps]
+image::images/django-configmaps.png[django_configmaps]
 
 === Persistent Volume and Volume Claim
 
@@ -318,7 +318,7 @@ Container Platform finds the claim with the given name in the same
 namespace as the pod, then uses the claim to find the corresponding
 volume to mount.
 
-image::openshift-pv-pvc-sample.png[openshift_pv_pvc_sample]
+image::images/openshift-pv-pvc-sample.png[openshift_pv_pvc_sample]
 
 == Summary
 
@@ -331,3 +331,18 @@ The web application was implemented using the Python programming
 language. OpenShift provides S2I builders for a number of different
 programming languages/frameworks in addition to Python. These include
 Java, NodeJS, Perl, PHP and Ruby.
+
+---------------------------------------------------------------------------
+* [1. Kubernetes Overview](kubernetes-overview.adoc)
+* [2. Navigating OpenShift Web Console](navigating-openshift-ui.adoc)
+* [3. Getting Started with MLOps](getting-started-mlops.adoc)
+* [4. Your Workshop Environment](workshop-environment.adoc)
+* [5. Exploring Data](exploring-data.adoc)
+* [6. Build the First Model](building-the-first-model.adoc)
+* [7. Productize the Model](productize-the-model.adoc)
+* [8. Deploy The Model To Staging](deploy-to-staging.adoc)
+* [9. Promote to Production](promote-to-production.adoc)
+* [10. Model Monitoring and Observability](model-observability.adoc)
+* [11. Continuous Training With A/B Testing](continuous-training.adoc)
+* [12. Deploy The Chosen One](decide-on-final-model.adoc)
+* [13. Completing the Solution with Red Hat Application Services](integrate-with-application-services.adoc)
