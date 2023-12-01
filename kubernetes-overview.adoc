@@ -216,4 +216,4 @@ data)
 
 == Links
 
-< a href="kubernetes-overview.adoc">1. Kubernetes Overview</a>
+link:kubernetes-overview.adoc[1. Kubernetes Overview]
