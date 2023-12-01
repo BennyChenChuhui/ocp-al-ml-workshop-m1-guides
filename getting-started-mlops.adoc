@@ -20,7 +20,7 @@ As shown in the following diagram, only a small fraction of a real-world
 ML system is composed of the ML code. The required surrounding elements
 are vast and complex.
 
-image::mlops-continuous-delivery-and-automation-pipelines-in-machine-learning-elements.png[mlops_elements]
+image::images/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning-elements.png[mlops_elements]
 
 == What Is MLOps
 
@@ -65,7 +65,7 @@ changes from a model.
 
 == Data Science Steps For MLOps
 
-image::cd4ml-end-to-end.png[cd4ml-end-to-end]
+image::images/cd4ml-end-to-end.png[cd4ml-end-to-end]
 Image Source:
 https://martinfowler.com/articles/cd4ml.html#TestingAndQualityInMachineLearning[CD4ML^]
 
@@ -131,3 +131,19 @@ to automate the different stages, such as building, testing, deployment
 and promotion of the model onto OpenShift.
 
 Let’s get started!
+
+== Links
+
+* link:kubernetes-overview.adoc[1. Kubernetes Overview]
+* link:navigating-openshift-ui.adoc[2. Navigating OpenShift Web Console]
+* link:getting-started-mlops.adoc[3. Getting Started with MLOps]
+* link:workshop-environment.adoc[4. Your Workshop Environment]
+* link:exploring-data.adoc[5. Exploring Data]
+* link:building-the-first-model.adoc[6. Build the First Model]
+* link:productize-the-model.adoc[7. Productize the Model]
+* link:deploy-to-staging.adoc[8. Deploy The Model To Staging]
+* link:promote-to-production.adoc[9. Promote to Production]
+* link:model-observability.adoc[10. Model Monitoring and Observability]
+* link:continuous-training.adoc[11. Continuous Training With A/B Testing]
+* link:decide-on-final-model.adoc[12. Deploy The Chosen One]
+* link:integrate-with-application-services.adoc[13. Completing the Solution with Red Hat Application Services]
