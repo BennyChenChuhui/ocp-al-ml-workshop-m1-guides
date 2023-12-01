@@ -32,7 +32,7 @@ Data management is the core part of DVC for large files, datasets, ML
 models versioning and efficient sharing. In this workshop, you will be
 using DVC to retrieve the dataset from a S3 bucket provided by Red Hat OpenShift Container Storage (OCS).
 
-image::dvc-model-versioning-diagram.png[dvc-model-versioning-diagram, 500]
+image::images/dvc-model-versioning-diagram.png[dvc-model-versioning-diagram, 500]
 
 The repository has been {{GIT_URL}}/{{USER_ID}}/creditcard/src/master/.dvc/config[configured^] to use S3 that comes from OCS. The S3 bucket will contain the actual training data. For example:
 
@@ -85,4 +85,20 @@ After you have acquainted yourself with how to edit and run Jupyter Notebooks, c
 
 After running notebook “1 data exploration”, the output would be similar to the example below.
 
-image::jupyternotebook-1-data-exploration.png[jupyter-1-data-exploration]
+image::images/jupyternotebook-1-data-exploration.png[jupyter-1-data-exploration]
+
+== Links
+
+* link:kubernetes-overview.adoc[1. Kubernetes Overview]
+* link:navigating-openshift-ui.adoc[2. Navigating OpenShift Web Console]
+* link:getting-started-mlops.adoc[3. Getting Started with MLOps]
+* link:workshop-environment.adoc[4. Your Workshop Environment]
+* link:exploring-data.adoc[5. Exploring Data]
+* link:building-the-first-model.adoc[6. Build the First Model]
+* link:productize-the-model.adoc[7. Productize the Model]
+* link:deploy-to-staging.adoc[8. Deploy The Model To Staging]
+* link:promote-to-production.adoc[9. Promote to Production]
+* link:model-observability.adoc[10. Model Monitoring and Observability]
+* link:continuous-training.adoc[11. Continuous Training With A/B Testing]
+* link:decide-on-final-model.adoc[12. Deploy The Chosen One]
+* link:integrate-with-application-services.adoc[13. Completing the Solution with Red Hat Application Services]
