@@ -214,7 +214,7 @@ Compared to containers, VMs are best used to:
 data)
 * Run a different OS inside another OS (such as running Unix on Linux)
 
----------------------------------------------------------------------------
+== Links
 * kubernetes-overview.adoc[1. Kubernetes Overview^]
 * navigating-openshift-ui.adoc[2. Navigating OpenShift Web Console^]
 * getting-started-mlops.adoc[3. Getting Started with MLOps^]
