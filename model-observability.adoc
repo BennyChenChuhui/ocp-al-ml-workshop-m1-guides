@@ -12,9 +12,9 @@ The Grafana dashboard has been {{GRAFANA_URL}}[configured^].
 
 Go to Home and find the `Prediction Analytics` dashboard.
 
-image::grafana-home.png[grafana-home, 200]
+image::images/grafana-home.png[grafana-home, 200]
 
-image::grafana-dashboard.png[grafana-dashboard, 700]
+image::images/grafana-dashboard.png[grafana-dashboard, 700]
 
 The dashboard has been configured to look at several metrics:
 
@@ -28,11 +28,11 @@ The dashboard has been configured to look at several metrics:
 
 Choose your image and namespace `{{USER_ID}}-prod` and view the metrics from your model.
 
-image::grafana-dropdown.png[grafana-dropdown, 500]
+image::images/grafana-dropdown.png[grafana-dropdown, 500]
 
 We are interested in the recall score of the model, which is the ratio TP / (TP + FN). Recall is a good metric to use when the cost associated with false negative (FN) is high. In this classification problem there is a high cost for the bank when a fraud transaction is predicted as non-fraud, since no actions can be taken. Thus, recall is one important metric to pay attention to.
 
-image::grafana-recall.png[grafana-recall, 400]
+image::images/grafana-recall.png[grafana-recall, 400]
 
 ## Exposing Metrics to Prometheus
 
@@ -76,3 +76,19 @@ class Base(object):
 The Seldon model provides a `/api/v1.0/feedback` endpoint that allows you to send back feedback to the model, which allows us to calculate various scores.
 
 This is extremely useful when multi-armed bandits are used for reinforced learning, so as to maximize a numerical reward signal.
+
+== Links
+
+* link:kubernetes-overview.adoc[1. Kubernetes Overview]
+* link:navigating-openshift-ui.adoc[2. Navigating OpenShift Web Console]
+* link:getting-started-mlops.adoc[3. Getting Started with MLOps]
+* link:workshop-environment.adoc[4. Your Workshop Environment]
+* link:exploring-data.adoc[5. Exploring Data]
+* link:building-the-first-model.adoc[6. Build the First Model]
+* link:productize-the-model.adoc[7. Productize the Model]
+* link:deploy-to-staging.adoc[8. Deploy The Model To Staging]
+* link:promote-to-production.adoc[9. Promote to Production]
+* link:model-observability.adoc[10. Model Monitoring and Observability]
+* link:continuous-training.adoc[11. Continuous Training With A/B Testing]
+* link:decide-on-final-model.adoc[12. Deploy The Chosen One]
+* link:integrate-with-application-services.adoc[13. Completing the Solution with Red Hat Application Services]
