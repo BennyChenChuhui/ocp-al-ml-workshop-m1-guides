@@ -347,4 +347,3 @@ Java, NodeJS, Perl, PHP and Ruby.
 * link:continuous-training.adoc[11. Continuous Training With A/B Testing]
 * link:decide-on-final-model.adoc[12. Deploy The Chosen One]
 * link:integrate-with-application-services.adoc[13. Completing the Solution with Red Hat Application Services]
-
