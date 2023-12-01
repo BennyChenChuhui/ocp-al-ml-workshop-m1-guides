@@ -134,7 +134,7 @@ You can login to {{ARGOCD_URL}}/applications/{{USER_ID}}-stage[Argo CD^] with yo
 
 There will be 2 classifier pods deployed in your {{CONSOLE_URL}}/k8s/ns/{{USER_ID}}-stage/pods/[{{USER_ID}}-stage project^].
 
-image::seldon-ab.png[seldon-ab]
+image::images/seldon-ab.png[seldon-ab]
 
 After the new model has been deployed to OpenShift, you can now run some basic tests
 
@@ -145,7 +145,7 @@ After the new model has been deployed to OpenShift, you can now run some basic t
 
 Now go to {{CONSOLE_URL}}/k8s/ns/{{USER_ID}}-stage/pods[OpenShift Console^] to view the pod logs. Observe that credit card transactions have been sent to both pods by calling the `/predict` endpoints. 
 
-image::seldon-ab-logs.png[seldon-ab-logs]
+image::images/seldon-ab-logs.png[seldon-ab-logs]
 
 ## Deploy To Production With A/B Testing
 
@@ -164,3 +164,19 @@ After the new model has been deployed to OpenShift, you can run some basic tests
 ----
 /projects/{{USER_MODEL_REPO_NAME}}/bin/prod-mon-test.sh
 ----
+
+== Links
+
+* link:kubernetes-overview.adoc[1. Kubernetes Overview]
+* link:navigating-openshift-ui.adoc[2. Navigating OpenShift Web Console]
+* link:getting-started-mlops.adoc[3. Getting Started with MLOps]
+* link:workshop-environment.adoc[4. Your Workshop Environment]
+* link:exploring-data.adoc[5. Exploring Data]
+* link:building-the-first-model.adoc[6. Build the First Model]
+* link:productize-the-model.adoc[7. Productize the Model]
+* link:deploy-to-staging.adoc[8. Deploy The Model To Staging]
+* link:promote-to-production.adoc[9. Promote to Production]
+* link:model-observability.adoc[10. Model Monitoring and Observability]
+* link:continuous-training.adoc[11. Continuous Training With A/B Testing]
+* link:decide-on-final-model.adoc[12. Deploy The Chosen One]
+* link:integrate-with-application-services.adoc[13. Completing the Solution with Red Hat Application Services]
